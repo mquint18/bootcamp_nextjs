@@ -1,5 +1,9 @@
-import chalk from "chalk";
+const add = require("./math");
+console.log(add(4, 7));
 
-console.log(chalk.green("Program Started"));
-console.log(chalk.red("An error occurred"));
-console.log(chalk.blue("Downloading file..."));
+const calc = require("./calculator");
+
+console.log(calc.add(4, 8));
+console.log(calc.subtract(9, 8));
+console.log(calc.multiply(4, 5));
+console.log(calc.divide(30, 5));
