@@ -1,7 +1,26 @@
 {
   "dependencies": {
     "chalk": "^5.6.2",
-    "prompt-sync": "^4.2.0",
-    "type": "module"
-  }
+    "express": "^5.2.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mquint18/bootcamp_nextjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mquint18/bootcamp_nextjs/issues"
+  },
+  "homepage": "https://github.com/mquint18/bootcamp_nextjs#readme"
 }
