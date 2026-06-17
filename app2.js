@@ -1,102 +1,98 @@
+import chalk from "chalk";
 
 //Task 1
 
-function greet(name, callback){
-    console.log('');
-    console.log('Task 1');
-    console.log('Hello ' + name);
+function greet(name, callback) {
+  console.log("");
+  console.log(chalk.red("Task 1"));
+  console.log(chalk.red("Hello " + name));
 
-    callback();
+  callback();
 }
 
-function welcome(){
-   
-    console.log('Welcome to Node.js');
+function welcome() {
+  console.log("Welcome to Node.js");
 }
 
-greet('Michael', welcome);
-
+greet("Michael", welcome);
 
 //Task 2
 
-function completeTask(callback){
-    console.log('');
-    console.log('Task 2');
-    console.log('Task Completed');
+function completeTask(callback) {
+  console.log("");
+  console.log(chalk.green("Task 2"));
+  console.log(chalk.green("Task Completed"));
 
-    callback();
+  callback();
 }
 
 function sendNote() {
-    console.log('Sending Notification...');
+  console.log(chalk.green("Sending Notification..."));
 }
 
 completeTask(sendNote);
 
-
 //Task 3
 
- console.log('');
- console.log('Task 3');
- console.log('Program Started');
+console.log("");
+console.log(chalk.yellow("Task 3"));
+console.log(chalk.yellow("Program Started"));
 setTimeout(() => {
-    console.log('Data Loaded Successfully');
+  console.log(chalk.yellow("Data Loaded Successfully"));
 }, 3000);
-
 
 // Task 4
 
-console.log('');
-console.log('Task 4');
+console.log("");
+console.log("Task 4");
 
-function registerStudent(name, callback){
-    console.log('Registering '+ name);
+function registerStudent(name, callback) {
+  console.log(chalk.bgYellow("Registering " + name));
 
-    callback(name);
+  callback(name);
 }
 
-function welcomeStudent(name){
-    console.log('Welcome ' + name);
+function welcomeStudent(name) {
+  console.log("Welcome " + name);
 }
 
 registerStudent("John", welcomeStudent);
 
 //Task 5
 
-console.log('');
-console.log('Task 5');
+console.log("");
+console.log("Task 5");
 
 function orderFood(food, callback) {
-    console.log("Preparin' da " + food + "...");
+  console.log("Preparin' da " + food + "...");
 
-    setTimeout(() => {
+  setTimeout(() => {
     console.log("Da " + food + " is a'ready");
     callback(food);
-}, 5000);
+  }, 5000);
 }
 
-function deliverFood(food){
-    console.log("I'm a deliverin' da " + food);
+function deliverFood(food) {
+  console.log("I'm a deliverin' da " + food);
 }
 
-orderFood('pizza', deliverFood);
+orderFood("pizza", deliverFood);
 
 //Task 6
 
-console.log('');
-console.log('Task 6');
+console.log("");
+console.log("Task 6");
 
 function downloadFile(callback) {
-    console.log("Downloading File ... ");
-    setTimeout(() =>{
-        console.log('Download Complete')
-        callback();
-    
-    },4000)
+  console.log("Downloading File ... ");
+  setTimeout(() => {
+    console.log("Download Complete");
+    callback();
+  }, 4000);
 }
 
 function openFile() {
-    console.log('Opening File...');
+  console.log("Opening File...");
 }
 
 downloadFile(openFile);
